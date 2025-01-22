@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.sara }}/flask-docker-app:latest
+          tags: fatimetou23083/flask_app:latest
