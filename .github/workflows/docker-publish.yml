@@ -1,4 +1,3 @@
-# .github/workflows/docker-publish.yml
 name: Docker Build and Push
 
 on:
@@ -16,7 +15,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.sara }}
+          username: ${{ secrets.deide }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       
       - name: Set up Docker Buildx
@@ -27,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: fatimetou23083/flask_app:latest
+          tags: deide22076/projet-devops:latest
